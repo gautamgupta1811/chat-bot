@@ -21,12 +21,12 @@ calendarIntent=['calendar','show calendar','calender please']
 chat=True
 while chat:
     msg=input("Enter your Message : ")
-    if msg in helloIntent:
+    if msg.lower() in helloIntent:
         print("hello there")
-    elif msg in dateIntent:
+    elif msg.lower() in dateIntent:
         d= datetime.now().date()
         print(d.strftime("%d/%m/%y,%a"))
-    elif msg in timeIntent:
+    elif msg.lower() in timeIntent:
         t=datetime.now().time()
         print(t.strftime("%H:%M:%S,%p"))
     elif msg.startswith('open'):
