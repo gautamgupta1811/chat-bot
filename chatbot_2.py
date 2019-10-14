@@ -4,6 +4,8 @@ import webbrowser
 import random
 import os
 
+def VellaFunction:
+    print("Mat call krio")
 
 
 
